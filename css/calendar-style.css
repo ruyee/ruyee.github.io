@@ -1,0 +1,64 @@
+
+html, body {
+	background: #e5e5e5;
+	font-family: sans-serif;
+}
+
+.month {
+	width: 350px;
+	padding: 20px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin: 20px;
+	height: 400px;
+}
+.month h3 {
+	text-align: center;
+	margin: -20px -20px 30px -20px;
+	padding: 20px 0;
+	background: #20a92b;
+	color: #fff;
+}
+
+.day, .dow, .dummy-day {
+	display: inline-block;
+	width: 12.7864%;
+	float: left;
+	text-align: center;
+	margin-right: 1.5%;
+}
+
+.dow {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.day {
+	color: #333;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 1px #eee;
+}
+.day.weekend {
+	background: #c9c9cd;
+}
+.day.firstday {
+	background: #20a92b;
+}
+.day:hover {
+	background: yellow;
+}
+
+.day, .dummy-day {
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 1.5%;
+	background: #fff;
+}
+
+.dummy-day {
+	background: #ffffff;
+	color: #ffffff;
+}
+

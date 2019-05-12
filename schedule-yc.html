@@ -11,7 +11,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="如一中文学校, Ruyee Chinese School, 致力与在海外传承中华文化" />
+	<meta name="description" content="如一中文学校, Ruyee Chinese School, 致力于在海外传承中华文化" />
 	<meta name="keywords" content="Chinese school, after school, 如一中文学校, 中文学校，课后班" />
 	<meta name="author" content="Chenhui Ouyang" />
 
@@ -36,6 +36,11 @@
 	<link href="css/responsive.css" rel="stylesheet">
 
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="js/instafeed.min.js"></script>
+	
+	<!--====== CALENDAR STYLE ======-->
+	<link rel="stylesheet" href="css/calendar-style.css">
+	
 	<!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -68,15 +73,6 @@
 								<p><i class="icofont  icofont-phone"></i> <a href="#">+1 408 203 2856</a></p>
 							</div>
 						</div>
-						<!-- <div class="col-md-6 col-lg-6 col-sm-12">
-							<div class="top-menu">
-								<ul>
-									<li><a href="#"><i class="icofont icofont-sign-in"></i> Login</a></li>
-									<li><a href="#"><i class="icofont icofont-checked"></i> Register</a></li>
-									<li><a href="#"><i class="icofont icofont-shopping-cart"></i> Your Cart: 0 Item - $00</a></li>
-								</ul>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -120,16 +116,6 @@
 			</div>
 			<!--END MAINMENU AREA END-->
 		</div>
-		
-		<div class="container">
-			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-					<div class="area-title text-center">
-						<h3>我们正在加油更新中</h3>
-						<h3>Site is under construction</h3>
-					</div>
-				</div>
-		
-		</div>
 
 		<!--HOME TEXT AREA-->
 		<div class="welcom-barner-area">
@@ -150,10 +136,55 @@
 	</header>
 	<!--END TOP AREA-->
 
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        		<div class="area-title text-center">
+					<h2> </h2>
+				</div>
+				<div class="area-title text-center">
+					<h2>2019-2020 Year Calendar</h2>
+					<p>如一中文学校时间表</p>
+				</div>
+			</div>
+			<div id="calendar"></div>
+			<script type="text/javascript" src="js/calendarize.js"></script>
+			<script type="text/javascript">
+				var $calendar = document.getElementById("calendar");
+				/* var currentYear = new Date().getFullYear(); */
+				var calendarize = new Calendarize();
+				calendarize.buildYearCalendar($calendar, 2019);
+			</script>
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        		<div class="area-title text-right">
+					<p>8/14 First Day of School</p>
+					<p>8/31 - 9/2 Labor Day</p>
+					<p>11/23 - 12/1 Thanksgiving Week</p>
+					<p>12/23 - 1/5 Winter Break</p>
+					<p>2/17 - 2/23 Presidents' Week</p>
+					<p>4/6 - 4/12 Spring Break</p>
+					<p>5/23 - 5/25 Memorial Day</p>
+					<p>6/4 Last Day of School</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--FOOER AREA-->
 	<footer class="footer-area gray-bg" id="contact">
+		<div>
+			<section class="about-area gray-bg">
+				<div class="container gray-bg">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+							<div class="area-title text-center">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 		<div class="footer-bottom dark-bg">
 			<div class="container">
 				<div class="row">
@@ -167,8 +198,11 @@
 		</div>
 	</footer>
 	<!--FOOER AREA END-->
-
-	<!--====== SCRIPTS JS ======-->
+	
+<!-- 	<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe>
+<div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:false,&quot;tsbc&quot;:true,&quot;pun&quot;:false,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div>
+	 -->
+<!--====== SCRIPTS JS ======-->
 	<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 
@@ -178,14 +212,14 @@
 	<script src="js/jquery.pogo-slider.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/stellar.js"></script>
-	<script src="js/instafeed.min.js"></script>
-	<script src="js/jquery.ajaxchimp.js"></script>
+ 	<script src="js/jquery.ajaxchimp.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/navigation.js"></script>
 
 	<!--===== ACTIVE JS=====-->
 	<script src="js/main.js"></script>
+	
 </body>
 
 </html>
