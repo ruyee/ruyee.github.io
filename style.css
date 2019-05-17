@@ -1034,7 +1034,7 @@ a.readmore {
 	padding-top: 12px;
 	position: absolute;
 	text-align: center;
-	top: 50%;
+	top: 1%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 60px;
