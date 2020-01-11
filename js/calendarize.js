@@ -32,7 +32,7 @@ function Calendarize() {
 //			return months;
 			
 			var start = new Date(year, 7, 1);
-			var end = new Date(year+1, 5, 1);
+			var end = new Date(year+1, 4, 1);
 			var months = [];
 			var monthCount = 0;
 			while (start <= end) {
@@ -164,7 +164,7 @@ function Calendarize() {
 				var dateParsed = Date.parse(c);
 				var todayParsed = Date.parse(today);
 				var firstday = Date.parse('14 Aug 2019 00:00:00 GMT-0700');
-				var lastday = Date.parse('04 Jun 2020 00:00:00 GMT-0700');
+				var lastday = Date.parse('30 May 2020 00:00:00 GMT-0700');
 				var weekend1 = Date.parse('01 Jan 2020 00:00:00 GMT-0800');
 				var weekend2 = Date.parse('02 Jan 2020 00:00:00 GMT-0800');
 				var weekend3 = Date.parse('03 Jan 2020 00:00:00 GMT-0800');
@@ -213,6 +213,8 @@ function Calendarize() {
 				
 				var weekend44 = Date.parse('01 Dec 2019 00:00:00 GMT-0800');
 				
+				var weekend45 = Date.parse('31 May 2020 00:00:00 GMT-0700');
+				
 
 				if (dateParsed === todayParsed) $dayNode.classList.add('today');
 				if (dateParsed > todayParsed) $dayNode.classList.add('future');
@@ -234,7 +236,7 @@ function Calendarize() {
 						|| dateParsed === weekend35 || dateParsed === weekend36 || dateParsed === weekend37
 						|| dateParsed === weekend38 || dateParsed === weekend39 || dateParsed === weekend40
 						|| dateParsed === weekend41 || dateParsed === weekend42 || dateParsed === weekend43
-						|| dateParsed === weekend44) $dayNode.classList.add('weekend');
+						|| dateParsed === weekend44 || dateParsed === weekend45) $dayNode.classList.add('weekend');
 				if (dateParsed === firstday || dateParsed === lastday) $dayNode.classList.add('firstday');
 				if (opts.onlyCurrent && c < today) $dayNode.classList.add('dummy-day');
 				if (opts.limitDate) {
