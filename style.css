@@ -62,7 +62,7 @@ a:hover {
 a:focus,
 a:hover {
 	outline: 0;
-	text-decoration: none;
+/*	text-decoration: none; */
 }
 
 ol,
@@ -115,7 +115,7 @@ body {
 */
 
 a:hover {
-	text-decoration: none
+/*	text-decoration: none */
 }
 
 
