@@ -163,57 +163,89 @@ function Calendarize() {
 				var dow = new Date(c).getDay();
 				var dateParsed = Date.parse(c);
 				var todayParsed = Date.parse(today);
-				var firstday = Date.parse('14 Aug 2019 00:00:00 GMT-0700');
-				var lastday = Date.parse('30 May 2020 00:00:00 GMT-0700');
-				var weekend1 = Date.parse('01 Jan 2020 00:00:00 GMT-0800');
-				var weekend2 = Date.parse('02 Jan 2020 00:00:00 GMT-0800');
-				var weekend3 = Date.parse('03 Jan 2020 00:00:00 GMT-0800');
-				var weekend4 = Date.parse('04 Jan 2020 00:00:00 GMT-0800');
-				var weekend5 = Date.parse('05 Jan 2020 00:00:00 GMT-0800');
-				var weekend6 = Date.parse('17 Feb 2020 00:00:00 GMT-0800');
-				var weekend7 = Date.parse('18 Feb 2020 00:00:00 GMT-0800');
-				var weekend8 = Date.parse('19 Feb 2020 00:00:00 GMT-0800');
-				var weekend9 = Date.parse('20 Feb 2020 00:00:00 GMT-0800');
-				var weekend10 = Date.parse('21 Feb 2020 00:00:00 GMT-0800');
-				var weekend11 = Date.parse('22 Feb 2020 00:00:00 GMT-0800');
-				var weekend12 = Date.parse('23 Feb 2020 00:00:00 GMT-0800');
-				var weekend13 = Date.parse('06 Apr 2020 00:00:00 GMT-0700');
+				var firstday = Date.parse('12 Aug 2020 00:00:00 GMT-0700');
+				var lastday = Date.parse('29 May 2021 00:00:00 GMT-0700');
 				
-				var weekend14 = Date.parse('31 Aug 2019 00:00:00 GMT-0700');
-				var weekend15 = Date.parse('01 Sep 2019 00:00:00 GMT-0700');
-				var weekend16 = Date.parse('02 Sep 2019 00:00:00 GMT-0700');
-				var weekend17 = Date.parse('23 Nov 2019 00:00:00 GMT-0800');
-				var weekend18 = Date.parse('24 Nov 2019 00:00:00 GMT-0800');
-				var weekend19 = Date.parse('25 Nov 2019 00:00:00 GMT-0800');
-				var weekend20 = Date.parse('26 Nov 2019 00:00:00 GMT-0800');
-				var weekend21 = Date.parse('27 Nov 2019 00:00:00 GMT-0800');
-				var weekend22 = Date.parse('28 Nov 2019 00:00:00 GMT-0800');
-				var weekend23 = Date.parse('29 Nov 2019 00:00:00 GMT-0800');
-				var weekend24 = Date.parse('30 Nov 2019 00:00:00 GMT-0800');
-				var weekend25 = Date.parse('23 Dec 2019 00:00:00 GMT-0800');
-				var weekend26 = Date.parse('24 Dec 2019 00:00:00 GMT-0800');
-				var weekend27 = Date.parse('25 Dec 2019 00:00:00 GMT-0800');
-				var weekend28 = Date.parse('26 Dec 2019 00:00:00 GMT-0800');
-				var weekend29 = Date.parse('27 Dec 2019 00:00:00 GMT-0800');
-				var weekend30 = Date.parse('28 Dec 2019 00:00:00 GMT-0800');
-				var weekend31 = Date.parse('29 Dec 2019 00:00:00 GMT-0800');
-				var weekend32 = Date.parse('30 Dec 2019 00:00:00 GMT-0800');
-				var weekend33 = Date.parse('31 Dec 2019 00:00:00 GMT-0800');
+				var weekend1 = Date.parse('16 Aug 2020 00:00:00 GMT-0700');
+				var weekend2 = Date.parse('23 Aug 2020 00:00:00 GMT-0700');
+				var weekend3 = Date.parse('30 Aug 2020 00:00:00 GMT-0700');
+				var weekend4 = Date.parse('05 Sep 2020 00:00:00 GMT-0700');
+				var weekend5 = Date.parse('06 Sep 2020 00:00:00 GMT-0700');
+				var weekend6 = Date.parse('07 Sep 2020 00:00:00 GMT-0700');
+				var weekend7 = Date.parse('13 Sep 2020 00:00:00 GMT-0700');
+				var weekend8 = Date.parse('20 Sep 2020 00:00:00 GMT-0700');
+				var weekend9 = Date.parse('27 Sep 2020 00:00:00 GMT-0700');
+				var weekend10 = Date.parse('04 Oct 2020 00:00:00 GMT-0700');
+				var weekend11 = Date.parse('11 Oct 2020 00:00:00 GMT-0700');
+				var weekend12 = Date.parse('18 Oct 2020 00:00:00 GMT-0700');
+				var weekend13 = Date.parse('25 Oct 2020 00:00:00 GMT-0700');
 				
-				var weekend34 = Date.parse('06 Apr 2020 00:00:00 GMT-0700');
-				var weekend35 = Date.parse('07 Apr 2020 00:00:00 GMT-0700');
-				var weekend36 = Date.parse('08 Apr 2020 00:00:00 GMT-0700');
-				var weekend37 = Date.parse('09 Apr 2020 00:00:00 GMT-0700');
-				var weekend38 = Date.parse('10 Apr 2020 00:00:00 GMT-0700');
-				var weekend39 = Date.parse('11 Apr 2020 00:00:00 GMT-0700');
-				var weekend40 = Date.parse('12 Apr 2020 00:00:00 GMT-0700');
-				var weekend41 = Date.parse('23 May 2020 00:00:00 GMT-0700');
-				var weekend42 = Date.parse('24 May 2020 00:00:00 GMT-0700');
-				var weekend43 = Date.parse('25 May 2020 00:00:00 GMT-0700');
+				var weekend14 = Date.parse('01 Nov 2020 00:00:00 GMT-0800');
+				var weekend15 = Date.parse('08 Nov 2020 00:00:00 GMT-0800');
+				var weekend16 = Date.parse('11 Nov 2020 00:00:00 GMT-0800');
+				var weekend17 = Date.parse('15 Nov 2020 00:00:00 GMT-0800');
+				var weekend18 = Date.parse('21 Nov 2020 00:00:00 GMT-0800');
+				var weekend19 = Date.parse('22 Nov 2020 00:00:00 GMT-0800');
+				var weekend20 = Date.parse('23 Nov 2020 00:00:00 GMT-0800');
+				var weekend21 = Date.parse('24 Nov 2020 00:00:00 GMT-0800');
+				var weekend22 = Date.parse('25 Nov 2020 00:00:00 GMT-0800');
+				var weekend23 = Date.parse('26 Nov 2020 00:00:00 GMT-0800');
+				var weekend24 = Date.parse('27 Nov 2020 00:00:00 GMT-0800');
+				var weekend25 = Date.parse('28 Nov 2020 00:00:00 GMT-0800');
+				var weekend26 = Date.parse('29 Nov 2020 00:00:00 GMT-0800');
+				var weekend27 = Date.parse('06 Dec 2020 00:00:00 GMT-0800');
+				var weekend28 = Date.parse('13 Dec 2020 00:00:00 GMT-0800');
+				var weekend29 = Date.parse('19 Dec 2020 00:00:00 GMT-0800');
+				var weekend30 = Date.parse('20 Dec 2020 00:00:00 GMT-0800');
+				var weekend31 = Date.parse('21 Dec 2020 00:00:00 GMT-0800');
+				var weekend32 = Date.parse('22 Dec 2020 00:00:00 GMT-0800');
+				var weekend33 = Date.parse('23 Dec 2020 00:00:00 GMT-0800');
+				var weekend34 = Date.parse('24 Dec 2020 00:00:00 GMT-0800');
+				var weekend35 = Date.parse('25 Dec 2020 00:00:00 GMT-0800');
+				var weekend36 = Date.parse('26 Dec 2020 00:00:00 GMT-0800');
+				var weekend37 = Date.parse('27 Dec 2020 00:00:00 GMT-0800');
+				var weekend38 = Date.parse('28 Dec 2020 00:00:00 GMT-0800');
+				var weekend39 = Date.parse('29 Dec 2020 00:00:00 GMT-0800');
+				var weekend40 = Date.parse('30 Dec 2020 00:00:00 GMT-0800');
+				var weekend41 = Date.parse('31 Dec 2020 00:00:00 GMT-0800');
 				
-				var weekend44 = Date.parse('01 Dec 2019 00:00:00 GMT-0800');
+				var weekend42 = Date.parse('01 Jan 2021 00:00:00 GMT-0800');
+				var weekend43 = Date.parse('02 Jan 2021 00:00:00 GMT-0800');
+				var weekend44 = Date.parse('03 Jan 2021 00:00:00 GMT-0800');
+				var weekend45 = Date.parse('10 Jan 2021 00:00:00 GMT-0800');
+				var weekend46 = Date.parse('17 Jan 2021 00:00:00 GMT-0800');
+				var weekend47 = Date.parse('18 Jan 2021 00:00:00 GMT-0800');
+				var weekend48 = Date.parse('24 Jan 2021 00:00:00 GMT-0800');
+				var weekend49 = Date.parse('31 Jan 2021 00:00:00 GMT-0800');
+				var weekend50 = Date.parse('07 Feb 2021 00:00:00 GMT-0800');
+				var weekend51 = Date.parse('13 Feb 2021 00:00:00 GMT-0800');
+				var weekend52 = Date.parse('14 Feb 2021 00:00:00 GMT-0800');
+				var weekend53 = Date.parse('15 Feb 2021 00:00:00 GMT-0800');
+				var weekend54 = Date.parse('16 Feb 2021 00:00:00 GMT-0800');
+				var weekend55 = Date.parse('17 Feb 2021 00:00:00 GMT-0800');
+				var weekend56 = Date.parse('18 Feb 2021 00:00:00 GMT-0800');
+				var weekend57 = Date.parse('19 Feb 2021 00:00:00 GMT-0800');
+				var weekend58 = Date.parse('21 Feb 2021 00:00:00 GMT-0800');
+				var weekend59 = Date.parse('28 Feb 2021 00:00:00 GMT-0800');
+				var weekend60 = Date.parse('07 Mar 2021 00:00:00 GMT-0800');
+				var weekend61 = Date.parse('14 Mar 2021 00:00:00 GMT-0800');
 				
-				var weekend45 = Date.parse('31 May 2020 00:00:00 GMT-0700');
+				var weekend62 = Date.parse('21 Mar 2021 00:00:00 GMT-0700');
+				var weekend63 = Date.parse('28 Mar 2021 00:00:00 GMT-0700');
+				var weekend64 = Date.parse('04 Apr 2021 00:00:00 GMT-0700');
+				var weekend65 = Date.parse('05 Apr 2021 00:00:00 GMT-0700');
+				var weekend66 = Date.parse('06 Apr 2021 00:00:00 GMT-0700');
+				var weekend67 = Date.parse('07 Apr 2021 00:00:00 GMT-0700');
+				var weekend68 = Date.parse('08 Apr 2021 00:00:00 GMT-0700');
+				var weekend69 = Date.parse('09 Apr 2021 00:00:00 GMT-0700');
+				var weekend70 = Date.parse('10 Apr 2021 00:00:00 GMT-0700');
+				var weekend71 = Date.parse('11 Apr 2021 00:00:00 GMT-0700');
+				var weekend72 = Date.parse('18 Apr 2021 00:00:00 GMT-0700');
+				var weekend73 = Date.parse('25 Apr 2021 00:00:00 GMT-0700');
+				var weekend74 = Date.parse('02 May 2021 00:00:00 GMT-0700');
+				var weekend75 = Date.parse('09 May 2021 00:00:00 GMT-0700');
+				var weekend76 = Date.parse('16 May 2021 00:00:00 GMT-0700');
+				var weekend77 = Date.parse('23 May 2021 00:00:00 GMT-0700');
 				
 
 				if (dateParsed === todayParsed) $dayNode.classList.add('today');
@@ -227,16 +259,28 @@ function Calendarize() {
 						|| dateParsed === weekend7 || dateParsed === weekend8 || dateParsed === weekend9
 						|| dateParsed === weekend10 || dateParsed === weekend11 || dateParsed === weekend12		 
 						|| dateParsed === weekend13 || dateParsed === weekend14 || dateParsed === weekend15
-						|| dateParsed === weekend16 || dateParsed === weekend17 || dateParsed === weekend18 || dateParsed === weekend19
-						|| dateParsed === weekend20 || dateParsed === weekend21 || dateParsed === weekend22
-						|| dateParsed === weekend23 || dateParsed === weekend24 || dateParsed === weekend25
-						|| dateParsed === weekend26 || dateParsed === weekend27 || dateParsed === weekend28
-						|| dateParsed === weekend29 || dateParsed === weekend30 || dateParsed === weekend31
-						|| dateParsed === weekend32 || dateParsed === weekend33 || dateParsed === weekend34
-						|| dateParsed === weekend35 || dateParsed === weekend36 || dateParsed === weekend37
-						|| dateParsed === weekend38 || dateParsed === weekend39 || dateParsed === weekend40
-						|| dateParsed === weekend41 || dateParsed === weekend42 || dateParsed === weekend43
-						|| dateParsed === weekend44 || dateParsed === weekend45) $dayNode.classList.add('weekend');
+						|| dateParsed === weekend16 || dateParsed === weekend17 || dateParsed === weekend18 
+						|| dateParsed === weekend19 || dateParsed === weekend20 || dateParsed === weekend21 
+						|| dateParsed === weekend22 || dateParsed === weekend23 || dateParsed === weekend24 
+						|| dateParsed === weekend25 || dateParsed === weekend26 || dateParsed === weekend27 
+						|| dateParsed === weekend28 || dateParsed === weekend29 || dateParsed === weekend30 
+						|| dateParsed === weekend31 || dateParsed === weekend32 || dateParsed === weekend33 
+						|| dateParsed === weekend34 || dateParsed === weekend35 || dateParsed === weekend36 
+						|| dateParsed === weekend37 || dateParsed === weekend38 || dateParsed === weekend39 
+						|| dateParsed === weekend40 || dateParsed === weekend41 || dateParsed === weekend42 
+						|| dateParsed === weekend43 || dateParsed === weekend44 || dateParsed === weekend45
+						|| dateParsed === weekend46 || dateParsed === weekend47 || dateParsed === weekend48
+						|| dateParsed === weekend49 || dateParsed === weekend50 || dateParsed === weekend51
+						|| dateParsed === weekend52 || dateParsed === weekend53 || dateParsed === weekend54
+						|| dateParsed === weekend55 || dateParsed === weekend56 || dateParsed === weekend57
+						|| dateParsed === weekend58 || dateParsed === weekend59 || dateParsed === weekend60
+						|| dateParsed === weekend61 || dateParsed === weekend62 || dateParsed === weekend63
+						|| dateParsed === weekend64 || dateParsed === weekend65 || dateParsed === weekend66
+						|| dateParsed === weekend67 || dateParsed === weekend68 || dateParsed === weekend69
+						|| dateParsed === weekend70 || dateParsed === weekend71 || dateParsed === weekend72
+						|| dateParsed === weekend73 || dateParsed === weekend74 || dateParsed === weekend75
+						|| dateParsed === weekend76 || dateParsed === weekend77
+						) $dayNode.classList.add('weekend');
 				if (dateParsed === firstday || dateParsed === lastday) $dayNode.classList.add('firstday');
 				if (opts.onlyCurrent && c < today) $dayNode.classList.add('dummy-day');
 				if (opts.limitDate) {

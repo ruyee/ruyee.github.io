@@ -163,24 +163,26 @@ function Calendarize() {
 				var dow = new Date(c).getDay();
 				var dateParsed = Date.parse(c);
 				var todayParsed = Date.parse(today);
-				var firstday = Date.parse('14 Aug 2019 00:00:00 GMT-0700');
-				var lastday = Date.parse('05 Jun 2020 00:00:00 GMT-0700');
+				var firstday = Date.parse('12 Aug 2020 00:00:00 GMT-0700');
+				var lastday = Date.parse('04 Jun 2021 00:00:00 GMT-0700');
 				
-				var weekend1 = Date.parse('02 Sep 2019 00:00:00 GMT-0700');
-				var weekend2 = Date.parse('28 Nov 2019 00:00:00 GMT-0800');
-				var weekend3 = Date.parse('29 Nov 2019 00:00:00 GMT-0800');
-				var weekend4 = Date.parse('23 Dec 2019 00:00:00 GMT-0800');
-				var weekend5 = Date.parse('24 Dec 2019 00:00:00 GMT-0800');
-				var weekend6 = Date.parse('25 Dec 2019 00:00:00 GMT-0800');
-				var weekend7 = Date.parse('26 Dec 2019 00:00:00 GMT-0800');
-				var weekend8 = Date.parse('27 Dec 2019 00:00:00 GMT-0800');
-				var weekend9 = Date.parse('30 Dec 2019 00:00:00 GMT-0800');
-				var weekend10 = Date.parse('31 Dec 2019 00:00:00 GMT-0800');
-				var weekend11 = Date.parse('01 Jan 2020 00:00:00 GMT-0800');
-				var weekend12 = Date.parse('02 Jan 2020 00:00:00 GMT-0800');
-				var weekend13 = Date.parse('03 Jan 2020 00:00:00 GMT-0800');
-				var weekend14 = Date.parse('17 Feb 2020 00:00:00 GMT-0800');
-				var weekend15 = Date.parse('25 May 2020 00:00:00 GMT-0700');
+				var weekend1 = Date.parse('07 Sep 2020 00:00:00 GMT-0700');
+				var weekend2 = Date.parse('11 Nov 2020 00:00:00 GMT-0800');
+				var weekend3 = Date.parse('26 Nov 2020 00:00:00 GMT-0800');
+				var weekend4 = Date.parse('27 Nov 2020 00:00:00 GMT-0800');
+				var weekend5 = Date.parse('21 Dec 2020 00:00:00 GMT-0800');
+				var weekend6 = Date.parse('22 Dec 2020 00:00:00 GMT-0800');
+				var weekend7 = Date.parse('23 Dec 2020 00:00:00 GMT-0800');
+				var weekend8 = Date.parse('24 Dec 2020 00:00:00 GMT-0800');
+				var weekend9 = Date.parse('25 Dec 2020 00:00:00 GMT-0800');
+				var weekend10 = Date.parse('28 Dec 2020 00:00:00 GMT-0800');
+				var weekend11 = Date.parse('29 Dec 2020 00:00:00 GMT-0800');
+				var weekend12 = Date.parse('30 Dec 2020 00:00:00 GMT-0800');
+				var weekend13 = Date.parse('31 Dec 2020 00:00:00 GMT-0800');
+				var weekend14 = Date.parse('01 Jan 2021 00:00:00 GMT-0800');
+				var weekend15 = Date.parse('18 Jan 2021 00:00:00 GMT-0800');
+				var weekend16 = Date.parse('15 Feb 2021 00:00:00 GMT-0800');
+				var weekend17 = Date.parse('31 May 2021 00:00:00 GMT-0700');
 				
 				if (dateParsed === todayParsed) $dayNode.classList.add('today');
 				if (dateParsed > todayParsed) $dayNode.classList.add('future');
@@ -193,6 +195,7 @@ function Calendarize() {
 						|| dateParsed === weekend7 || dateParsed === weekend8 || dateParsed === weekend9
 						|| dateParsed === weekend10 || dateParsed === weekend11 || dateParsed === weekend12		 
 						|| dateParsed === weekend13 || dateParsed === weekend14 || dateParsed === weekend15
+						|| dateParsed === weekend16 || dateParsed === weekend17 
 					) $dayNode.classList.add('weekend');
 				if (dateParsed === firstday || dateParsed === lastday) $dayNode.classList.add('firstday');
 				if (opts.onlyCurrent && c < today) $dayNode.classList.add('dummy-day');
