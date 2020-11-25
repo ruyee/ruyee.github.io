@@ -180,7 +180,7 @@ function Calendarize() {
 				var weekend12 = Date.parse('18 Oct 2020 00:00:00 GMT-0700');
 				var weekend13 = Date.parse('25 Oct 2020 00:00:00 GMT-0700');
 				
-				var weekend14 = Date.parse('01 Nov 2020 00:00:00 GMT-0800');
+				var weekend14 = Date.parse('01 Nov 2020 00:00:00 GMT-0700');
 				var weekend15 = Date.parse('08 Nov 2020 00:00:00 GMT-0800');
 				var weekend16 = Date.parse('11 Nov 2020 00:00:00 GMT-0800');
 				var weekend17 = Date.parse('15 Nov 2020 00:00:00 GMT-0800');
