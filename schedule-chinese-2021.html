@@ -37,6 +37,9 @@
 	<link href="css/responsive.css" rel="stylesheet">
 
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	
+	<!--====== CALENDAR STYLE ======-->
+	<link rel="stylesheet" href="css/calendar-style.css">
 	<!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -105,8 +108,8 @@
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Schedule</a>
 									<ul class="dropdown-menu">
 										<!-- <li> <a href="schedule-yc.html">Year Calendar</a> </li> -->
-										<li class="active"> <a href="schedule-as.html">After School</a> </li>
-										<li> <a href="schedule-chinese.html">Chinese Class</a> </li>
+										<li> <a href="schedule-as.html">After School</a> </li>
+										<li class="active"> <a href="schedule-chinese.html">Chinese Class</a> </li>
 										<li> <a href="schedule-summer-2022.html">2022 Summer</a> </li>
 										<!-- <li> <a href="schedule-spring.html">2019 Spring</a> </li> -->
 									</ul>
@@ -131,7 +134,7 @@
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 						<div class="welcome-text text-center">
 							<h1>Class Schedule</h1>
-							<h3>After School</h3>
+							<h3>Chinese Class</h3>
 						</div>
 					</div>
 				</div>
@@ -142,33 +145,23 @@
 	</header>
 	<!--END TOP AREA-->
 	
-
 	<!--Table AREA Start-->
-	<div class="container">
+
+    <div class="container">
         <div class="row">
         	<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 				<div class="area-title text-center">
 					<h2> </h2>
 				</div>
 				<div class="area-title text-center">
-					<h2>2022-2023课后班课程表</h2>
-					<h2>After School Schedule</h2>
-					<h1>.</h1>
-					<h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSfxENsP49rCZICgYE2XrgkuX4IMWCz36xG7TvRsxvJI-POZLg/viewform?embedded=true" width="700" height="520"> 报名请点击此链接🔗</a></h1>
+					<h2>2021-2022中文课课程表</h2>
+					<h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDJtRoaruYoVmywufdCbbx3EO3vs2cfq6AJEFxC1bh6phA8g/viewform?embedded=true" width="700" height="520"> 报名链接🔗</a></h1>
 				</div>
 			</div>
             <div class="col-md-12">
-               <img src="img/2022AfterSchoolSchedule.jpg" alt="">
+               <img src="img/2021ChineseClassScheduleWeekend.jpg" alt="">
             </div>
         </div>
-
-		<div class="area-title text-center">
-			<h2> </h2>
-		</div>
-	
-		<div class="area-title text-center">
-			<h2>2022-2023课后班学费After School Tuition</h2>
-		</div>
     
 	</div>
 	
@@ -179,13 +172,11 @@
 			</div>
 		</div>
 	</section> 
-
-	
     
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="img/2022AfterSchoolTuition.jpg" alt="">
+                <img src="img/2021ChineseClassScheduleWeekday.jpg" alt="">
             </div>
         </div>
         
@@ -203,7 +194,7 @@
 					</div>
 				</div>
 			</div>
-		</section>  
+		</section>  -->
 		
 		<div class="container">
 		<div class="row">
@@ -217,7 +208,7 @@
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		
 		<div class="container">
 			<div class="row">
@@ -226,63 +217,70 @@
 						<h2> </h2>
 					</div>
 					<div class="area-title text-center">
-						<h2>课后班年历 After School Calendar</h2>
-						<!--<p>灰色为无课日期</p> -->
+						<h2>2021-2022 中文课年历</h2>
+						<p>灰色为无课日期</p>
 					</div>
 				</div>
-				
-				<!--
 				<div id="calendar"></div>
-				<script type="text/javascript" src="js/calendarize-as2021.js"></script>
+				<script type="text/javascript" src="js/calendarize2021.js"></script>
 				<script type="text/javascript">
 					var $calendar = document.getElementById("calendar");
 					/* var currentYear = new Date().getFullYear(); */
-					var calendarize = new CalendarizeAs2021();
-					calendarize.buildYearCalendar($calendar, 2020);
+					var calendarize2021 = new Calendarize2021();
+					calendarize2021.buildYearCalendar($calendar, 2021);
 				</script>
-				-->
-
-				<!--
 				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 	        		<div class="area-title text-right">
 						<p>8/11 First Day of School</p>
 						<p>9/4 - 9/6 Labor Day</p>
-						<p>11/11 Veteran's Day</p>
-						<p>11/25 - 11/28 Thanksgiving Week</p>
+						<p>11/20 - 11/28 Thanksgiving Week</p>
 						<p>12/20 - 1/2 Winter Break</p>
 						<p>1/17 Martin Luther King, Jr. Birthday</p>
-						<p>2/21 Presidents' Day</p>
-						<p>5/30 Memorial Day</p>
-						<p>6/3 Last Day of School</p>
+						<p>2/19 - 2/25 Presidents' Week</p>
+						<p>4/3 - 4/10 Spring Break</p>
+						<p>5/28 Last Day of School</p>
 					</div>
 				</div>
-				-->
 	
 			</div>
 		</div>
-	
+		
     </div>
 
     <!--TABLE AREA End-->
-
-	<div class="container">
+    
+    <div class="container">
         <div class="row">
         	<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 				<div class="area-title text-center">
-					<h1><a href="files/2022-2023 After School Calendar.pdf" download>点击下载课后班年历PDF版🔗</a></h1>
+					<h1><a href="files/2021-2022 Chinese Class Calendar.pdf" download>点击下载中文课年历PDF版🔗</a></h1>
 				</div>
 			</div>
         </div>
 	</div>
-
+  
 	<!--FOOER AREA-->
-	<footer class="footer-area gray-bg" id="contact">
+
+	<footer class="footer-area" id="contact">
+		<div>
+			<section class="about-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+							<div class="area-title text-center">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 		<div class="footer-bottom dark-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 						<div class="footer-copyright text-center">
-							<p>&copy; 2022 <a href="#">Ruyee Chinese School</a> All Right Reserved.</p>
+							<p>&copy; 2020 <a href="#">Ruyee Chinese School</a> All Right Reserved.</p>
 						</div>
 					</div>
 				</div>
